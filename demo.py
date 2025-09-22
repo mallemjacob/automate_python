@@ -14,3 +14,6 @@ print('It is about ' + str(distance) + ' km.')
 
 print('2' + '1') #concatenation
 print( 2 + 1) #addition
+
+git = "version control"
+github = "store code with multiple versions"
