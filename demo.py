@@ -17,3 +17,18 @@ print( 2 + 1) #addition
 
 git = "version control"
 github = "store code with multiple versions"
+#/////////////////////////////////////////////
+eggs = 20
+name = 'jk'
+def greet():
+    # global name
+    name = 'bye'
+    print(name)
+
+greet()
+print(name)
+
+
+def gg():
+    print(name)
+gg()
