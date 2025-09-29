@@ -13,14 +13,17 @@ for x in range(WIDTH):
             column.append(' ') # Add a dead cell
     nextCells.append(column)
 
-while True:
-    print('\n\n\n\n\n')
-    currentCells = copy.deepcopy(nextCells)
-    for y in range(HEIGHT):
-        for x in range(WIDTH):
-            print(currentCells[x][y], end='')
-        print()
-    time.sleep(1)
+print(len(nextCells))
+print(len(nextCells[0]))
 
-    # for x in range(WIDTH):
-    #     for y in range(HEIGHT):
+# while True:
+#     print('\n\n\n\n\n')
+#     currentCells = copy.deepcopy(nextCells)
+#     for y in range(HEIGHT):
+#         for x in range(WIDTH):
+#             print(currentCells[x][y], end='')
+#         print()
+#     time.sleep(1)
+
+#     # for x in range(WIDTH):
+#     #     for y in range(HEIGHT):
