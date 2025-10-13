@@ -7,20 +7,54 @@ def collatz(number):
     return 3 * number + 1
 
 print("Enter a number:")
-user_value = int(input())
+try:
+  user_value = int(input())
+except ValueError:
+  print('Error: Must be integer')
+  user_value = int(input())
+
+while True:
+  return_value = collatz(user_value)
+  if return_value == 1:
+    break
+  else:
+    user_value = return_value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # while True:
 #   return_value = collatz(user_value)
-#   if return_value == 1:
-#     break
-#   else:
+#   if return_value != 1:
 #     user_value = return_value
-
-
-while True:
-  return_value = collatz(user_value)
-  if return_value != 1:
-    user_value = return_value
-  else:
-    break
+#   else:
+#     break    
