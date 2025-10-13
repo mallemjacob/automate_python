@@ -6,19 +6,25 @@ def collatz(number):
     print(3 * number + 1)
     return 3 * number + 1
 
-print("Enter a number:")
-try:
-  user_value = int(input())
-except ValueError:
-  print('Error: Must be integer')
-  user_value = int(input())
-
 while True:
-  return_value = collatz(user_value)
-  if return_value == 1:
+  try:
+    print("Enter a number:" )
+    user_value = int(input())
+    while True:
+      return_value = collatz(user_value)
+      if return_value == 1:
+        break
+      else:
+        user_value = return_value      
     break
-  else:
-    user_value = return_value
+  except KeyboardInterrupt:
+    print('Progam ended')
+    break
+  except ValueError:
+    print('Error: Must be integer')
+
+
+  
 
 
 

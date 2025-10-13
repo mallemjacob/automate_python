@@ -38,20 +38,30 @@
 
 
 
-def cat_dog(str):
+# def cat_dog(str):
     
-    cat_count = 0
-    dog_count = 0
+#     cat_count = 0
+#     dog_count = 0
 
-    for i in range(len(str)):
-        if str[i:i+3] == 'cat':
-            cat_count = cat_count + 1
-        if str[i:i+3] == 'dog':
-            dog_count = dog_count + 1
-    return cat_count == dog_count 
+#     for i in range(len(str)):
+#         if str[i:i+3] == 'cat':
+#             cat_count = cat_count + 1
+#         if str[i:i+3] == 'dog':
+#             dog_count = dog_count + 1
+#     return cat_count == dog_count 
 
 
-print(cat_dog('catdog'))
-print(cat_dog('catcat'))
-print(cat_dog('1cat1cadodog'))
-print(cat_dog('catcatdogdog'))
+# print(cat_dog('catdog'))
+# print(cat_dog('catcat'))
+# print(cat_dog('1cat1cadodog'))
+# print(cat_dog('catcatdogdog'))
+
+
+i = 0
+while i < 5:
+    if i == 3:
+        break
+    print(i)
+    i = i + 1
+
+print('The end')
