@@ -46,23 +46,25 @@
 
 # print(supplies[random.randint(0, len(supplies) - 1)])
 
-def xyz_there(str):
-  if str[:3] == "xyz":
-    return True
+# def xyz_there(str):
+#   if str[:3] == "xyz":
+#     return True
                     
-  for i in range(1, len(str) - 2):
-    if str[i-1] != "." and str[i:i+3] == "xyz":
-      return True
+#   for i in range(1, len(str) - 2):
+#     if str[i-1] != "." and str[i:i+3] == "xyz":
+#       return True
                                       
-  return False
+#   return False
 
-print(xyz_there('abcxyz'))  #z=5, 6
-print(xyz_there('abc.xyz')) #3=. 4=x
-print(xyz_there('.xyz.abc'))
+# print(xyz_there('abcxyz'))  #z=5, 6
+# print(xyz_there('abc.xyz')) #3=. 4=x
+# print(xyz_there('.xyz.abc'))
 
 
-spam = ['a', 'b', '.', 'x', 'y', 'z']
+# spam = ['a', 'b', '.', 'x', 'y', 'z']
 
-for i in range(len(spam) -2):  #i=a = 0
-  if spam[i:i+3] == ['x','y','z']:
-    print(True)
+# for i in range(len(spam) -2):  #i=a = 0
+#   if spam[i:i+3] == ['x','y','z']:
+#     print(True)
+
+i = 0
