@@ -15,7 +15,13 @@ source .venv/bin/activate
 pip install requests
 pip install flask
 pip install -q -U google-genai
-pip install -r requirements.txt
+
+# Run requirments.txt
+touch requirments.txt
+requests
+flask
+google-genai
+pip install -r requirments.txt
 
 # create a new python file app.py
 touch app.py
