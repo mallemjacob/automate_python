@@ -19,12 +19,16 @@ class Dog(Animal):
 
     def getname(self):
         return f"Name is {self.name}"
+    
+    def describe_species(self):
+        return "This is from Dog class"
 
 dog1 = Dog('german shepard', 'snoopy')
 print(dog1.species)
 
 print(dog1.describe_species())
 print(dog1.getname())
+
 
 
 # cat child class
@@ -35,6 +39,9 @@ class Cat(Animal):
 
     def getCatAge(self):
         return f"The age is {self.age}"
+    
+    def describe_species(self):
+        return "This is from cat species"
 
 cat1 = Cat('zookie', 18)
 print(cat1.species)
