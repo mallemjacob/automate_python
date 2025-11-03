@@ -15,9 +15,20 @@ class Github:
 
     def callApi(self):
         response = requests.get(self.path)
+        # convert json data to python dictionary
         data = response.json()
-        print(data["items"][0]["id"])
+        # print(data["items"][0]["id"])
 
-glink = "https://api.github.com/search/repositories?q=language:python+sort:stars"
-req1 = Github(glink)
+        for item in data["items"][:5]:
+            self.names = self.names + [item["name"]]
+
+        # print(self.names)
+
+    def getNamesList(self):
+        for i in self.names:
+            print(i)
+
+ghlink = "https://api.github.com/search/repositories?q=language:python+sort:stars"
+req1 = Github(ghlink)
 req1.callApi()
+req1.getNamesList()

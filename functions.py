@@ -1,9 +1,13 @@
-# def hello():
-#     print('Hello!')
-#     print('Bonjour!')
+def hello(name):
+    name = 'hi'
+    print('Hello!', name)
+    return name
 
-# hello()
-# hello()
+hello('val')
+
+print(name)
+print(hello())
+
 
 
 
